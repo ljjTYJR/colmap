@@ -89,4 +89,4 @@ COLMAP_ADD_EXECUTABLE(
         ${OPTIONAL_LIBS}
         Boost::boost
 )
-set_target_properties(colmap_main PROPERTIES OUTPUT_NAME colmap)
+set_target_properties(colmap_main PROPERTIES OUTPUT_NAME v_colmap)
