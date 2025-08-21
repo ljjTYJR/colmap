@@ -103,6 +103,22 @@ Contribution
 Contributions (bug reports, bug fixes, improvements, etc.) are very welcome and
 should be submitted in the form of new issues and/or pull requests on GitHub.
 
+Building
+--------
+
+To build the project, create a build directory and run CMake:
+COLMAP building:
+```bash
+mkdir build
+cd build
+cmake .. -GNinja -DBLA_VENDOR=Intel10_64lp -DCMAKE_CUDA_ARCHITECTURES=89 -DCMAKE_INSTALL_PREFIX=$PWD/install
+ninja -j $(nproc)
+ninja install
+```
+Python Bindings building:
+```
+python -m pip install . -v
+```
 
 License
 -------
